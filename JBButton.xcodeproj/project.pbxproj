@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2AD05F5E1D13E13100C2DA4E /* JBButton-Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2AD05F5F1D13E13100C2DA4E /* Build configuration list for PBXAggregateTarget "JBButton-Universal" */;
+			buildPhases = (
+				2AD05F621D13E19E00C2DA4E /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "JBButton-Universal";
+			productName = "JBButton-Universal";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		2AD05F4D1D13DF4800C2DA4E /* JBButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD05F4C1D13DF4800C2DA4E /* JBButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD05F551D13DFBC00C2DA4E /* JBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD05F541D13DFBC00C2DA4E /* JBButton.swift */; };
+		2AD05F571D13E00600C2DA4E /* JBLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD05F561D13E00600C2DA4E /* JBLoading.swift */; };
+		2AD05F591D13E03C00C2DA4E /* JBAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD05F581D13E03C00C2DA4E /* JBAnimated.swift */; };
+		2AD05F5B1D13E06D00C2DA4E /* JBLayouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD05F5A1D13E06D00C2DA4E /* JBLayouting.swift */; };
+		2AD05F5D1D13E09100C2DA4E /* JBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD05F5C1D13E09100C2DA4E /* JBColor.swift */; };
+		9CD23F0851EC2A827E833D73 /* Pods_JBButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C030AB335DCC070612A78C /* Pods_JBButton.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F84B6F07B3207506ABE9FF8 /* Pods-JBButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JBButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-JBButton/Pods-JBButton.release.xcconfig"; sourceTree = "<group>"; };
+		2AD05F491D13DF4800C2DA4E /* JBButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JBButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AD05F4C1D13DF4800C2DA4E /* JBButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBButton.h; sourceTree = "<group>"; };
+		2AD05F4E1D13DF4800C2DA4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AD05F541D13DFBC00C2DA4E /* JBButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBButton.swift; sourceTree = "<group>"; };
+		2AD05F561D13E00600C2DA4E /* JBLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBLoading.swift; sourceTree = "<group>"; };
+		2AD05F581D13E03C00C2DA4E /* JBAnimated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBAnimated.swift; sourceTree = "<group>"; };
+		2AD05F5A1D13E06D00C2DA4E /* JBLayouting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBLayouting.swift; sourceTree = "<group>"; };
+		2AD05F5C1D13E09100C2DA4E /* JBColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBColor.swift; sourceTree = "<group>"; };
+		59C030AB335DCC070612A78C /* Pods_JBButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JBButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D2F20FB351D0B2D8255101 /* Pods-JBButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JBButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JBButton/Pods-JBButton.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AD05F451D13DF4800C2DA4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD23F0851EC2A827E833D73 /* Pods_JBButton.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AD05F3F1D13DF4800C2DA4E = {
+			isa = PBXGroup;
+			children = (
+				2AD05F4B1D13DF4800C2DA4E /* JBButton */,
+				2AD05F4A1D13DF4800C2DA4E /* Products */,
+				D24F13548CF7B783607234A1 /* Pods */,
+				EB36D8D3314EE01DED5E27FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2AD05F4A1D13DF4800C2DA4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AD05F491D13DF4800C2DA4E /* JBButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AD05F4B1D13DF4800C2DA4E /* JBButton */ = {
+			isa = PBXGroup;
+			children = (
+				2AD05F541D13DFBC00C2DA4E /* JBButton.swift */,
+				2AD05F561D13E00600C2DA4E /* JBLoading.swift */,
+				2AD05F581D13E03C00C2DA4E /* JBAnimated.swift */,
+				2AD05F5A1D13E06D00C2DA4E /* JBLayouting.swift */,
+				2AD05F5C1D13E09100C2DA4E /* JBColor.swift */,
+				2AD05F4C1D13DF4800C2DA4E /* JBButton.h */,
+				2AD05F4E1D13DF4800C2DA4E /* Info.plist */,
+			);
+			path = JBButton;
+			sourceTree = "<group>";
+		};
+		D24F13548CF7B783607234A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94D2F20FB351D0B2D8255101 /* Pods-JBButton.debug.xcconfig */,
+				0F84B6F07B3207506ABE9FF8 /* Pods-JBButton.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB36D8D3314EE01DED5E27FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59C030AB335DCC070612A78C /* Pods_JBButton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2AD05F461D13DF4800C2DA4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD05F4D1D13DF4800C2DA4E /* JBButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2AD05F481D13DF4800C2DA4E /* JBButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AD05F511D13DF4800C2DA4E /* Build configuration list for PBXNativeTarget "JBButton" */;
+			buildPhases = (
+				E82C086C55B790F9FF5ACF74 /* 📦 Check Pods Manifest.lock */,
+				2AD05F441D13DF4800C2DA4E /* Sources */,
+				2AD05F451D13DF4800C2DA4E /* Frameworks */,
+				2AD05F461D13DF4800C2DA4E /* Headers */,
+				2AD05F471D13DF4800C2DA4E /* Resources */,
+				7FA732208B21F1AC9898210D /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JBButton;
+			productName = JBButton;
+			productReference = 2AD05F491D13DF4800C2DA4E /* JBButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AD05F401D13DF4800C2DA4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jérôme Boursier";
+				TargetAttributes = {
+					2AD05F481D13DF4800C2DA4E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					2AD05F5E1D13E13100C2DA4E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2AD05F431D13DF4800C2DA4E /* Build configuration list for PBXProject "JBButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2AD05F3F1D13DF4800C2DA4E;
+			productRefGroup = 2AD05F4A1D13DF4800C2DA4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AD05F481D13DF4800C2DA4E /* JBButton */,
+				2AD05F5E1D13E13100C2DA4E /* JBButton-Universal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AD05F471D13DF4800C2DA4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AD05F621D13E19E00C2DA4E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=false\n\nFRAMEWORK_NAME=\"${PROJECT_NAME}\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Frameworks\n######################\n\nxcodebuild -workspace ${PROJECT_NAME}.xcworkspace -scheme ${PROJECT_NAME} -sdk iphonesimulator -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator 2>&1\n\nxcodebuild -workspace ${PROJECT_NAME}.xcworkspace -scheme ${PROJECT_NAME} -sdk iphoneos -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos 2>&1\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make an universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n# For Swift framework, Swiftmodule needs to be copied in the universal framework\nif [ -d \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\ncp -f ${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\nfi\n\nif [ -d \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\ncp -f ${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\nfi\n\n######################\n# On Release, copy the result to release directory\n######################\nOUTPUT_DIR=\"${PROJECT_DIR}/Output/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\n\nrm -rf \"$OUTPUT_DIR\"\nmkdir -p \"$OUTPUT_DIR\"\n\ncp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n\nif [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\nopen \"${OUTPUT_DIR}/\"\nfi";
+		};
+		7FA732208B21F1AC9898210D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JBButton/Pods-JBButton-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E82C086C55B790F9FF5ACF74 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AD05F441D13DF4800C2DA4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD05F5B1D13E06D00C2DA4E /* JBLayouting.swift in Sources */,
+				2AD05F5D1D13E09100C2DA4E /* JBColor.swift in Sources */,
+				2AD05F571D13E00600C2DA4E /* JBLoading.swift in Sources */,
+				2AD05F551D13DFBC00C2DA4E /* JBButton.swift in Sources */,
+				2AD05F591D13E03C00C2DA4E /* JBAnimated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2AD05F4F1D13DF4800C2DA4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2AD05F501D13DF4800C2DA4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2AD05F521D13DF4800C2DA4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94D2F20FB351D0B2D8255101 /* Pods-JBButton.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JBButton/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeromeboursier.JBButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2AD05F531D13DF4800C2DA4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F84B6F07B3207506ABE9FF8 /* Pods-JBButton.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JBButton/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeromeboursier.JBButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2AD05F601D13E13100C2DA4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2AD05F611D13E13100C2DA4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AD05F431D13DF4800C2DA4E /* Build configuration list for PBXProject "JBButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AD05F4F1D13DF4800C2DA4E /* Debug */,
+				2AD05F501D13DF4800C2DA4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AD05F511D13DF4800C2DA4E /* Build configuration list for PBXNativeTarget "JBButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AD05F521D13DF4800C2DA4E /* Debug */,
+				2AD05F531D13DF4800C2DA4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AD05F5F1D13E13100C2DA4E /* Build configuration list for PBXAggregateTarget "JBButton-Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AD05F601D13E13100C2DA4E /* Debug */,
+				2AD05F611D13E13100C2DA4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AD05F401D13DF4800C2DA4E /* Project object */;
+}
