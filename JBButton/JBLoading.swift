@@ -32,10 +32,20 @@ public extension JBLoading {
             let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.Gray)
             if self.imageRenderingMode == 1 {
                 activityIndicator.color = self.imageView?.tintColor
+            } else if self.image == nil {
+                activityIndicator.color = self.titleColor
             }
+            activityIndicator.frame = self.defaultFrameForLoader()
             self.customLoader = activityIndicator
             self.customLoaderStart = { activityIndicator.startAnimating() }
             self.customLoaderStop = { activityIndicator.stopAnimating() }
+        }
+        
+        // Setup loader
+        if self.customLoader?.frame == CGRect.zero && self.image == nil {
+            self.customLoader?.frame = self.defaultFrameForLoader()
+        } else if self.image != nil {
+            self.customLoader?.frame = self.imageView!.frame
         }
     }
     
@@ -66,7 +76,7 @@ public extension JBLoading {
         
         self.prepareForLoading()
         
-        if self.hideTitleOnLoad {
+        if self.hideTitleOnLoad || self.image == nil {
             self.positionValue = .centered
         }
         
@@ -77,7 +87,7 @@ public extension JBLoading {
         
         self.launchAnimations(self.customLoadingAnimations, forGlobalKeyPath: "loadingAnimations")
         
-        if let newTitle = title where newTitle.characters.count != 0 && !self.hideTitleOnLoad {
+        if let newTitle = title where newTitle.characters.count != 0 && !self.hideTitleOnLoad && self.title != nil {
             self.setTitleText(newTitle)
         } else {
             self.setNeedsDisplay()
@@ -105,7 +115,7 @@ public extension JBLoading {
         
         self.isLoading = false
         
-        if self.hideTitleOnLoad {
+        if self.hideTitleOnLoad || self.image == nil {
             self.positionValue = self.originalPosition
         }
         
@@ -115,7 +125,7 @@ public extension JBLoading {
         
         self.layer.removeAllAnimations()
         
-        if let newTitle = title where newTitle.characters.count != 0 && !self.hideTitleOnLoad {
+        if let newTitle = title where newTitle.characters.count != 0 && self.title != nil {
             self.setTitleText(newTitle)
         } else {
             self.setNeedsDisplay()

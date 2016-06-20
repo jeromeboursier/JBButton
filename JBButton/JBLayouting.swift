@@ -31,9 +31,6 @@ public extension JBLayouting {
             frames = self.layoutForCentered(fromImageView: imageView)
         }
         
-        // Setup loader
-        self.customLoader?.frame = frames!.0
-        
         // Setup image
         self.setupImageView(withFrame: frames!.0)
         
@@ -165,6 +162,19 @@ public extension JBLayouting {
             height: imageView.frame.height)
         
         return (imageViewFrame, CGRect.zero)
+    }
+    
+    /**
+     Determines the layout of the default frame for the loader
+     
+     - returns: the default frame for the loader
+     */
+    internal func defaultFrameForLoader() -> CGRect {
+        return CGRect(
+            x: self.frame.width/2 - self.titleLabel!.frame.height/4,
+            y: self.frame.height/2 - self.titleLabel!.frame.height/4,
+            width: self.titleLabel!.frame.height/2,
+            height: self.titleLabel!.frame.height/2)
     }
     
     /**

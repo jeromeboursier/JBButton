@@ -35,7 +35,7 @@ public class JBButton: UIView {
     }
     
     /// Inspectable: text to be displayed
-    @IBInspectable public var title: String = "Hit me!"
+    @IBInspectable public var title: String? = "Hit me!"
     /// Inspectable: color of the text
     @IBInspectable public var titleColor: UIColor = UIColor.blackColor()
     /// Inspectable: alignment of the text. Treat as `NSTextAlignment.<alignment>.rawValue`
@@ -202,8 +202,6 @@ public class JBButton: UIView {
     }
     
     override public func prepareForInterfaceBuilder() {
-        self.frame = self.bounds
-        
         self.titleLabel?.text = self.title
         self.titleLabel?.textAlignment = NSTextAlignment(rawValue: NSInteger(self.titleAlignment)) ?? .Center
         self.layer.cornerRadius = self.cornerRadius
