@@ -178,6 +178,45 @@ public extension JBLayouting {
     }
     
     /**
+     Determines the frame of the loader
+     
+     - returns: The calculated frame of the loader
+     */
+    internal func determineLoaderFrame() -> CGRect {
+        
+        if self.customLoader?.frame != CGRect.zero {
+            return self.customLoader!.frame
+        }
+        
+        if self.hideTitleOnLoad {
+            // hide title and center
+            self.positionValue = Position.centered
+            
+            if self.image == nil {
+                // hide title and default center
+                return self.defaultFrameForLoader()
+            } else {
+                // hide title and center
+                let center = CGPoint(x: self.frame.width/2 - self.imageView!.frame.height/2,
+                                     y: self.frame.height/2 - self.imageView!.frame.height/2)
+                self.customLoader?.center = center
+                self.customLoader?.frame.size = self.imageView!.frame.size
+                return self.customLoader!.frame
+            }
+            
+        } else {
+            if self.image == nil {
+                // hide title and default center
+                self.positionValue = Position.centered
+                return self.defaultFrameForLoader()
+            } else {
+                // frame = image frame
+                return self.imageView!.frame
+            }
+        }
+    }
+    
+    /**
      Setups the imageView with user defined attributes
      
      - parameter frame: the frame of the imageView previously calculated
