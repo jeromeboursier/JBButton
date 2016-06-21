@@ -23,6 +23,45 @@ public extension JBLoading {
         self.customLoaderStop = stop
     }
     
+    /**
+     Determines the frame of the loader
+     
+     - returns: The calculated frame of the loader
+     */
+    private func determineLoaderFrame() -> CGRect {
+        
+        if self.customLoader?.frame != CGRect.zero {
+            return self.customLoader!.frame
+        }
+        
+        if self.hideTitleOnLoad {
+            // hide title and center
+            self.positionValue = Position.centered
+            
+            if self.image == nil {
+                // hide title and default center
+                return self.defaultFrameForLoader()
+            } else {
+                // hide title and center
+                let center = CGPoint(x: self.frame.width/2 - self.imageView!.frame.height/2,
+                                     y: self.frame.height/2 - self.imageView!.frame.height/2)
+                self.customLoader?.center = center
+                self.customLoader?.frame.size = self.imageView!.frame.size
+                return self.customLoader!.frame
+            }
+            
+        } else {
+            if self.image == nil {
+                // hide title and default center
+                self.positionValue = Position.centered
+                return self.defaultFrameForLoader()
+            } else {
+                // frame = image frame
+                return self.imageView!.frame
+            }
+        }
+    }
+    
     
     /**
      Prepares the view for loading
@@ -35,18 +74,13 @@ public extension JBLoading {
             } else if self.image == nil {
                 activityIndicator.color = self.titleColor
             }
-            activityIndicator.frame = self.defaultFrameForLoader()
             self.customLoader = activityIndicator
             self.customLoaderStart = { activityIndicator.startAnimating() }
             self.customLoaderStop = { activityIndicator.stopAnimating() }
+            self.customLoader?.frame = CGRect.zero
         }
         
-        // Setup loader
-        if self.customLoader?.frame == CGRect.zero && self.image == nil {
-            self.customLoader?.frame = self.defaultFrameForLoader()
-        } else if self.image != nil {
-            self.customLoader?.frame = self.imageView!.frame
-        }
+        self.customLoader?.frame = self.determineLoaderFrame()
     }
     
     /**
@@ -75,6 +109,7 @@ public extension JBLoading {
         self.isLoading = true
         
         self.prepareForLoading()
+        
         
         if self.hideTitleOnLoad || self.image == nil {
             self.positionValue = .centered
@@ -130,5 +165,18 @@ public extension JBLoading {
         } else {
             self.setNeedsDisplay()
         }
+    }
+    
+    /**
+     Calculates the default frame for the loader
+     
+     - returns: the default frame for the loader
+     */
+    private func defaultFrameForLoader() -> CGRect {
+        return CGRect(
+            x: self.frame.width/2 - self.titleLabel!.frame.height/4,
+            y: self.frame.height/2 - self.titleLabel!.frame.height/4,
+            width: self.titleLabel!.frame.height/2,
+            height: self.titleLabel!.frame.height/2)
     }
 }
